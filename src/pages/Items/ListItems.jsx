@@ -1,16 +1,9 @@
-import PropTypes from 'prop-types'
+import ItemsTable from '../../components/ItemsTable'
 
-function ListItems(props) {
+export default function ListItems() {
   return (
     <div>
-      <h1>All Items</h1>
+      <ItemsTable />
     </div>
   )
 }
-
-ListItems.propTypes = {
-
-}
-
-export default ListItems
-

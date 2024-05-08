@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
 
-function DetailsItem(props) {
+
+export default function DetailsItem() {
   return (
     <div>
       
@@ -8,9 +8,4 @@ function DetailsItem(props) {
   )
 }
 
-DetailsItem.propTypes = {
-
-}
-
-export default DetailsItem
 

@@ -1,35 +1,15 @@
-import PropTypes from 'prop-types'
-import { Link, Outlet } from 'react-router-dom'
-import { useState } from 'react'
-
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import '../../styles/view-items.css'
 
-function ViewItem(props) {
-  const [active, setActive] = useState('items')
-
-  function handleToggle(link) {
-    console.log(link)
-    if (link !== active) {
-      setActive(link)
-    }
-  }
+export default function ViewItem() {
+  const { pathname } = useLocation()
 
   return (
     <div className='view-items'>
       <h1>Stock Items</h1>
       <nav>
-        <Link 
-          to='/items' 
-          className={active === "items" ? "active": ""} 
-          onClick={() => handleToggle('items')} >
-            All Items
-        </Link>
-        <Link 
-          to='new' 
-          className={active === "new" ? "active": ""} 
-          onClick={() => handleToggle('new')} >
-            New Item
-        </Link>
+        <Link to='/items' className={pathname === "/items" ? "active": ""}>All Items</Link>
+        <Link to='new' className={pathname === "/items/new" ? "active": ""}>New Item</Link>
       </nav>
       <section>
         <Outlet />
@@ -37,10 +17,4 @@ function ViewItem(props) {
     </div>
   )
 }
-
-ViewItem.propTypes = {
-
-}
-
-export default ViewItem
 
