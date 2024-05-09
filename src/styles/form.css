@@ -1,0 +1,40 @@
+form {
+  margin-top: 2rem;
+  width: 900px;
+  margin: 2rem auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.row div {
+  flex: 1 0 10rem;
+  padding: 1rem;
+}
+
+.row div label {
+  display: block;
+}
+
+.row div input, select, textarea {
+  width: 100%;
+  padding:.5rem;
+  border: 1px solid aqua;
+  border-radius: 4px;
+  outline: none;
+}
+
+.row div textarea {
+  height: 10rem;
+}
+
+@media (max-width: 964px) {
+  form {
+    width: 100%;
+    background-color: red;
+  }
+}
