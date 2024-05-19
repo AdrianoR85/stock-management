@@ -1,5 +1,5 @@
-import ItemsTable from '../../components/ItemsTable'
-
+import ItemsTable from "../../components/ItemsTable"
+import '../../styles/table.css';
 export default function ListItems() {
   return (
     <div>
