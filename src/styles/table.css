@@ -10,6 +10,22 @@ thead {
   box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.25);
 }
 
+thead tr, tbody tr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+th, td {
+  flex: 1;
+}
+
+tbody tr {
+  border-bottom: 2px solid rgba(28, 26, 29, 0.5);
+}
+
+
 tbody tr:hover {
   background-color: rgba(28, 26, 29, 0.33);
   cursor: default;
@@ -17,4 +33,14 @@ tbody tr:hover {
 
 th, td {
   padding: 1.25rem;
+  text-align: left;
+}
+
+
+@media (max-width: 897px) {
+  .table-buttons { 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px; 
+  }
 }

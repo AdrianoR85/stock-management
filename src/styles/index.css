@@ -82,13 +82,20 @@ footer {
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
-  padding: .5em 1em;
+  padding: .3em .5em;
   text-decoration: none;
   transition: .2s;
 }
 .button + .button { margin-left: .75rem; }
 .button:hover { filter: brightness(0.9); }
-.button.is-small { font-size: 0.875; }
+.button.is-small { font-size: 0.825rem; }
 .button.is-larger { font-size: 1.25rem; }
 .button.is-primary { background-color: #5ba2fd }
 .button.is-danger { background-color: #ff2558; }
+
+
+@media (max-width: 897px) {
+    .button + .button { 
+      margin-left: 0rem; 
+    }
+} 
