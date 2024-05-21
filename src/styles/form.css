@@ -23,13 +23,17 @@ form {
 .row div input, select, textarea {
   width: 100%;
   padding:.5rem;
-  border: 1px solid aqua;
+  border: 1px solid #fefefe;
   border-radius: 4px;
   outline: none;
 }
 
 .row div textarea {
   height: 10rem;
+}
+
+form button {
+  margin-left: 1rem;
 }
 
 @media (max-width: 964px) {

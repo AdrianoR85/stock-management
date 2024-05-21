@@ -8,6 +8,7 @@ export default function ItemsTable() {
           <th>ID</th>
           <th>Name</th>
           <th>Quantity</th>
+          <th>Price</th>
           <th>Category</th>
           <th>Actions</th>
         </tr>
@@ -17,6 +18,7 @@ export default function ItemsTable() {
           <td>0001</td>
           <td>Pencil</td>
           <td>10</td>
+          <td>9.99</td>
           <td>Officer</td>
           <td className="table-buttons">
             <Link className="button is-small is-primary">Details</Link>
