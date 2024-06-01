@@ -4,7 +4,7 @@ export default function RootView() {
   return (
     <div className="container">
       <header>
-        <Link to='/' className="logo"><span>S</span>tock <span>M</span>anager</Link>
+        <Link to='/' className="logo"><span>S</span>tock <span>M</span>anagement</Link>
         <nav >
           <Link to='/'>Home</Link>
           <Link to='/items'>Items</Link>
