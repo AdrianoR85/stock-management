@@ -1,3 +1,4 @@
+[![Project Status](https://img.shields.io/badge/project_status-under_development-orange.svg)](https://shields.io)
 # Stock Management 
 
 ## Description:
